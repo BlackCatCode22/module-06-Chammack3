@@ -1,19 +1,12 @@
-class PartyAnimal:
+# sampleClass.py
 
-    def __init__(self):
-        self.x = 0
+class SampleClass:
+    def __init__(self, name):
+        self.name = name
 
-    def party(self):
-        self.x = self.x + 1
-        print("So far...", self.x)
+    def display_message(self):
+        print(f"Hello, {self.name}! Welcome to the Sample Class.")
 
-
-an = PartyAnimal()
-
-print("type is: ", type(an))
-print("dir is: ", dir(an))
-print("type of an.x is: ", type(an.x))
-
-an.party()
-an.party()
-an.party()
+if __name__ == "__main__":
+    obj = SampleClass("User")
+    obj.display_message()
